@@ -1,4 +1,4 @@
-LOCAL_PATH := device/$$BRAND$$/$$DEVICE$$
+LOCAL_PATH := device/infinix/h532_a1
 
 TARGET_BOARD_PLATFORM := mt6753               # From ro.mediatek.platform, but lowercase value
 TARGET_NO_BOOTLOADER := false
@@ -92,3 +92,4 @@ TARGET_CPU_VARIANT := cortex-a7
 TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI),$(TARGET_CPU_ABI2)
 
 endif
+
