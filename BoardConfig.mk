@@ -7,7 +7,7 @@ TARGET_BOOTLOADER_BOARD_NAME := h532_a1     # From ro.product.board
 # These two are for MTK Chipsets only
 BOARD_USES_MTK_HARDWARE := true
 BOARD_HAS_MTK_HARDWARE := true
-
+ALLOW_MISSING_DEPENDENCIES := true
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true            # To add info about F2FS Filesystem Data Block
@@ -92,5 +92,6 @@ ARCH_ARM_HAVE_NEON := true
 ARCH_ARM_HAVE_VFP := true
 
 endif
+
 
 
