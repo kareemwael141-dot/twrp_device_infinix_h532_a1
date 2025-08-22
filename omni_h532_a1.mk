@@ -11,7 +11,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 # Replace $$DEVICE$$ with your Device Name's Value.
 # Replace $$BRAND$$ with your Brand's / Manufacturer's Value.
-PRODUCT_COPY_FILES += device/infinix/h532_a1/prebuilt/zImage:kernel
+PRODUCT_COPY_FILES += $(DEVICE_PATH)/prebuilt/zImage:kernel
 # Fles under $(LOCAL_PATH)/recovery/root/ gets automatically copied into recovery
 # PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/*:root/*
 
@@ -29,4 +29,5 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += \
     # These lines are from my device. You MUST Replace yours.
     BUILD_FINGERPRINT="XOLO/XOLO_BLACK-1X/BLACK-1X:5.1/LMY47D/1444968253:user/release-keys" \
+
     PRIVATE_BUILD_DESC="XOLO_BLACK-1X-user 5.1 LMY47D 1444968253 release-keys"
